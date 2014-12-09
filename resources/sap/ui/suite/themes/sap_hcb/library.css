@@ -1,0 +1,106 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5/OpenUI5)
+ * (c) Copyright 2009-2014 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5/OpenUI5)
+ * (c) Copyright 2009-2014 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+/* Global CSS for 'base' theme */
+/* ---------------------------------------------------------------------------------------- */
+/* TMP during LESS convertion ---- to be deleted */
+/* may be required by SubstitutionRulesManager.css in inbox lib */
+/* ---------------------------------------------------------------------------------------- */
+/** 
+  * This parameter is used in the Shell control to calculate the size when it grows.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE. 
+  */
+/** 
+  * This parameter is used in the Shell control to calculate the size of the margin when showing
+  * an overflow button in the right pane. As of 1.18.0 this value contains the _maximum_ height
+  * of the overflow button, if the text inside the button is smaller, the button shrinks with it.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/* Approved by UX to use a hard coded color value for this */
+/* NotificationBar */
+/* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* transparent; */
+/* Default margins classes to be used by the application for all controls */
+/*make small margin themable*/
+/*make small margin themable*/
+/*make medium margin themable*/
+/*make large margin themable*/
+/* This CSS shares it rules with all other CSS of this library */
+/* ============================================= */
+/* CSS for control sap.ui.dev/TaskCircle.control */
+/* ============================================= */
+.sapUiTaskCircle {
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #000000;
+  color: #ffffff;
+}
+/* ============================================= */
+/* CSS for control sap.ui.suite/VerticalProgressIndicator.control */
+/* ============================================= */
+.sapUiVerticalProgressOuterContainer {
+  border: 2px solid #ffffff;
+  width: 31px;
+  height: 58px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  background-color: #7a5100;
+}
+.sapUiVerticalProgressInnerContainer {
+  position: relative;
+  background-color: #7a5100;
+}
+/* Global CSS for 'sap_hcb' theme */
+/* Background Colors */
+/* Foreground Colors */
+/* Semantic Colors */
+/* Shadow Color */
+/* StandardListItem */
+/* ==================================== */
+/* Font styling                         */
+/* ==================================== */
+/* ==================================== */
+/* Chart Colors                         */
+/* ==================================== */
+/* Semantic Chart Colors */
+/* Note Explicit UX decision not to derive from @sapUiCritical, ... */
+/* Accent Chart Colors */
+/* Sequential Chart Colors */
+/* Derived Chart Colors */
+/* Shell */
+/* NotificationBar */
+/* RatingIndicator */
+/* ToolPopup */
+/* DateTimeInput Custom Picker JavaScript	  */
+/* mixed, scroller, clickpick */
+/* mixed, scroller, clickpick */
+/* modal, bubble, bottom, top */
+/* modal, bubble, bottom, top */
+/* Toolbar Separator */
+/* This CSS inherits rules from default/shared.css */
+/* ============================================= */
+/* CSS for control sap.ui.dev/TaskCircle.control */
+/* ============================================= */
+.sapUiTaskCircle {
+  box-shadow: 0px 0px 0px #000000;
+}
+/* ============================================= */
+/* CSS for control sap.ui.suite/VerticalProgressIndicator.control */
+/* ============================================= */
+.sapUiVerticalProgressOuterContainer {
+  box-shadow: 0px 0px 0px #000000;
+  background-color: #000000;
+}
+.sapUiVerticalProgressInnerContainer {
+  background-color: #ffffff;
+}
