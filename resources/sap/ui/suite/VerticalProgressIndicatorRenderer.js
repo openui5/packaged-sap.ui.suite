@@ -1,6 +1,6 @@
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 
@@ -11,23 +11,23 @@ sap.ui.define(['jquery.sap.global'],
 
 
 	/**
-	 * VerticalProgressIndicator renderer. 
+	 * VerticalProgressIndicator renderer.
 	 * @namespace
 	 */
 	var VerticalProgressIndicatorRenderer = {
 	};
-	
-	
+
+
 	/**
 	 * Renders the HTML for the given control, using the provided {@link sap.ui.core.RenderManager}.
-	 * 
+	 *
 	 * @param {sap.ui.core.RenderManager} oRenderManager the RenderManager that can be used for writing to the Render-Output-Buffer
 	 * @param {sap.ui.core.Control} oControl an object representation of the control that should be rendered
 	 */
 	VerticalProgressIndicatorRenderer.render = function(oRenderManager, oControl){
 	    // convenience variable
 		var rm = oRenderManager;
-		
+
 		//calculate percentage
 	    var VerticalPercent = oControl.getPercentage();
 	    if (VerticalPercent < 0 || VerticalPercent == Number.NaN) {
@@ -39,18 +39,18 @@ sap.ui.define(['jquery.sap.global'],
 	    var PixelDown = Math.round(VerticalPercent * 58 / 100);
 	    var PixelUp   = 58 - PixelDown;
 	    var PercentageString = VerticalPercent.toString();
-	
-		// write the HTML into the render manager  
+
+		// write the HTML into the render manager
 	    rm.write("<DIV");
 	    rm.writeControlData(oControl);
 	    rm.writeAttribute('tabIndex', '0');
-	
+
 		if (oControl.getTooltip_AsString()) {
 			rm.writeAttributeEscaped("title", oControl.getTooltip_AsString());
 		} else {
 			rm.writeAttributeEscaped("title", PercentageString);
 		}
-	    
+
 	    //ARIA
 	    if ( sap.ui.getCore().getConfiguration().getAccessibility()) {
 		  rm.writeAttribute('role', 'progressbar');
@@ -58,7 +58,7 @@ sap.ui.define(['jquery.sap.global'],
 		  rm.writeAccessibilityState(oControl, {valuemax: '100%'});
 		  rm.writeAccessibilityState(oControl, {valuenow: VerticalPercent + '%'});
 		}
-	    
+
 	    rm.writeAttribute("class","sapUiVerticalProgressOuterContainer");
 	    rm.write(">"); // Outer DIV element
 	    rm.write("<DIV");
@@ -71,9 +71,9 @@ sap.ui.define(['jquery.sap.global'],
 	    rm.write(">"); // Inner DIV element
 	    rm.write("</DIV>");
 	    rm.write("</DIV>");
-	
+
 	};
-	
+
 
 	return VerticalProgressIndicatorRenderer;
 
