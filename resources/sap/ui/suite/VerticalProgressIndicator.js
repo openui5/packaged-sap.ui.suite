@@ -34,7 +34,7 @@ sap.ui.define([
 	 * @extends sap.ui.core.Control
 	 *
 	 * @author Svetozar Buzdumovic
-	 * @version 1.56.4
+	 * @version 1.56.5
 	 *
 	 * @constructor
 	 * @public
